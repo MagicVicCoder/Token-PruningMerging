@@ -33,12 +33,7 @@ qwen_pruning/
 *.swp
 *.swo
 
-# 数据文件 - 不上传大型数据文件
-data/
-*.pkl
-*.pickle
-*.h5
-*.hdf5
+
 
 # 模型文件 - 不上传训练好的模型和下载的预训练模型
 *.pth
