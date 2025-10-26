@@ -6,6 +6,7 @@ from torch.optim.lr_scheduler import CosineAnnealingLR
 from tqdm import tqdm
 import time
 from datetime import datetime
+from typing import Dict
 
 from config import ConfigManager
 from data import get_data_loader_class
