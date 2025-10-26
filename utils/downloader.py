@@ -39,7 +39,7 @@ class DatasetManager:
             from datasets import load_dataset
             print("Testing MME dataset loading...")
             # 尝试加载一个小样本进行测试
-            dataset = load_dataset("lmms-lab/MME", trust_remote_code=True)
+            dataset = load_dataset("lmms-lab/MME")
             print(f"Dataset loaded successfully. Available splits: {list(dataset.keys())}")
             return True
         except Exception as e:
