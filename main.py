@@ -8,6 +8,11 @@ from train import Trainer
 from test import test_model
 from utils.downloader import DatasetManager
 
+# 设置 Hugging Face 镜像站
+os.environ['HF_ENDPOINT'] = 'https://hf-mirror.com'
+# 添加项目根目录到 Python 路径
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
 def check_environment():
     """检查环境依赖"""
     # 检查CUDA可用性
